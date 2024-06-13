@@ -1,9 +1,9 @@
 {
+  "homepage": "https://AnkushMoundekar.github.io/Docs/",
   "name": "personaldocumentation",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AnkushMoundekar.github.io/Docs/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
