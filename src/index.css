@@ -80,3 +80,6 @@ button:focus-visible {
   text-align: center;
   font-size: 3.5rem;
 }
+ol li{
+  font-weight: bold;
+}

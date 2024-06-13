@@ -4,7 +4,7 @@ function Content(props) {
     const location=useLocation();
     return (
         <>
-            <div className="content">
+        <div className="content">
                 <h3>{!props.subheading?"Overview":props.subheading}</h3>
                 {props.text}
             </div>

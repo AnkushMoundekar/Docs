@@ -35,6 +35,7 @@
     position: fixed; /* Fixes the sidebar position */
     top: 120px;
     box-sizing: border-box;
+    z-index: 2;
 }
 .getstarted{
   margin-left: 16px;
@@ -69,11 +70,11 @@
 }
 
 .content {
-    top: 100px;
-    position: relative;
-    margin-left: 24%; /* Same as the sidebar width */
-    padding: 20px;
-    flex-grow: 1;
+    position: absolute;
+    margin-top: 120px;
+    left: 24%; /* Same as the sidebar width */
+    padding: 0px 20px;
+    /* flex-grow: 1; */
     transition: opacity 0.3s ease;
 }
 
@@ -84,7 +85,7 @@
   display: block;
   position: fixed;
   z-index: 1;
-  height: 90px;
+  height: 125px;
   width: 100%;
   background-color: hsl(0, 0%, 100%);
 }
@@ -107,6 +108,7 @@
 
 .codecard {
   position: relative;
+  margin-bottom: 19px;
   width: 93%;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -125,8 +127,11 @@
   border-radius: 3px;
   cursor: pointer;
 }
-
+.copy-button:focus,
+.copy-button:focus-visible{
+  outline: 4px auto #959494;
+}
 .codecard-content {
-  padding: 20px;
+  padding: 0px 20px;
   margin: 20px;
 }
